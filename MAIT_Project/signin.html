@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<style>
+        *{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: dodgerblue;
+    text-align: center;
+    font-size: xx-large;
+}
+.container{
+    font-size: xx-large;
+    /* text-align-last: center; */
+    padding-left: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.star{
+    color: red;
+}
+.button{
+    padding: 15px;
+    font-size: xx-large;
+    border-radius: 20px;
+}
+</style>
+
+<body>
+    <div class="container">
+    <form action="" method="get">
+    <header>
+        <h1>Signin</h1>
+    </header>
+    <hr>
+    <h2>User information</h2>
+    <br>
+    
+    Role<sup class="star">*</sup> : <select name="role" required>
+        <option value="">Select</option>
+        <option value="Trainer">Trainer</option>
+        <option value="Student">Student</option>
+    </select>
+    <br><br>
+    Name<sup class="star">*</sup> : <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    <br><br>
+    <fieldset class="temp">
+    <legend>Gender<sup class="star">*</sup> :</legend>           
+    <ul> 
+    <li>Female<input type="radio" name="gender" id="Female" required></li> 
+    <li>Male<input type="radio" name="gender" id="male" required></li>
+    <li>Other<input type="radio" name="gender" id="other" required></li>
+    </ul>
+    </fieldset>
+     <br><br>
+    Address<sup class="star">*</sup> : <textarea name="address" id="address" placeholder="Enter Your Address" required></textarea>
+    <br><br>
+    Email<sup class="star">*</sup> : <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    <br><br>
+    Phone Number<sup class="star">*</sup> : <input type="number" name="Phone_no" id="Phone_no" placeholder="Enter Your Phone Number" required>
+    <br><br>
+    <center><b><input type="submit" value="Register Now" class="button"></b></center>
+</div>
+</form>
+</body>
+</html>
